@@ -16,6 +16,7 @@ namespace LabExercise2
         {
             InitializeComponent();
         }
+        Record records = new Record();
 
         public class Record
         {
@@ -27,15 +28,13 @@ namespace LabExercise2
 
             List<Record> records = new List<Record>();
             
-
-
         }
 
         private void btnArray1_Click(object sender, EventArgs e)
         {
             try
             {
-                Record records = new Record();
+               
                 records.array1 = Double.Parse(txtInput.Text);
                 txtInput.Clear();
             }
@@ -53,7 +52,7 @@ namespace LabExercise2
         {
             try
             {
-                Record records = new Record();
+              
                 records.array2 = Double.Parse(txtInput.Text);
                 txtInput.Clear();
             }
@@ -70,7 +69,7 @@ namespace LabExercise2
         {
             try
             {
-                Record records = new Record();
+              
                 records.array3 = Double.Parse(txtInput.Text);
                 txtInput.Clear();
             }
@@ -87,7 +86,7 @@ namespace LabExercise2
         {
             try
             {
-                Record records = new Record();
+                
                 records.array4 = Double.Parse(txtInput.Text);
                 txtInput.Clear();
             }
@@ -104,7 +103,7 @@ namespace LabExercise2
         {
             try
             {
-                Record records = new Record();
+            
                 records.array5 = Double.Parse(txtInput.Text);
                 txtInput.Clear();
             }
@@ -120,7 +119,7 @@ namespace LabExercise2
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
-        
+            
         }
                            
         }
