@@ -103,7 +103,7 @@ namespace LabExercise2
         {
             try
             {
-            
+                
                 records.array5 = Double.Parse(txtInput.Text);
                 txtInput.Clear();
             }
@@ -120,6 +120,7 @@ namespace LabExercise2
         private void btnDisplay_Click(object sender, EventArgs e)
         {
             double elements = 0;
+
             if (records.array1 != 0) { elements++; }
             if (records.array2 != 0) { elements++; }
             if (records.array3 != 0) { elements++; }
