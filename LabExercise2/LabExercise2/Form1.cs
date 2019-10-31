@@ -119,10 +119,30 @@ namespace LabExercise2
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
+            double elements = 0;
+            if (records.array1 != 0) { elements++; }
+            if (records.array2 != 0) { elements++; }
+            if (records.array3 != 0) { elements++; }
+            if (records.array4 != 0) { elements++; }
+            if (records.array5 != 0) { elements++; }
+
+            lstDisplay.Items.Clear();
+
+            lstDisplay.Items.Add(records.array1);
+            lstDisplay.Items.Add(records.array2);
+            lstDisplay.Items.Add(records.array3);
+            lstDisplay.Items.Add(records.array4);
+            lstDisplay.Items.Add(records.array5);
+
+            lblSumEl.Text = (records.array1 + records.array2 + records.array3 + records.array4 + records.array5).ToString();
+            lblAvgEl.Text = ((records.array1 + records.array2 + records.array3 + records.array4 + records.array5)/elements).ToString();
+            lblNumEl.Text = elements.ToString();
+
+            elements = 0;
             
         }
-                           
-        }
+
+    }
     }
 
 
